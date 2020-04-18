@@ -121,14 +121,14 @@ const showResults = () => {
   }
   selector.innerHTML = `
   <div class="mt-3">
-    <h3 class="text-center mt-5 mb-5 font-weight-bold text-primary">Score : ${goodAnswers}/${questions.length}</h3>
+    <h3 class="text-center mt-5 mb-5 font-weight-bold text-primary">Score : <span class="font-weight-light">${goodAnswers}/${questions.length}</span></h3>
     <table class="table bg-white table-responsive mb-5 p-3 rounded table-borderless">
       <thead>
         <tr>
           <th scope="col" class="text-primary" style="width: 2%"></th>
-          <th scope="col" class="text-primary text-nowrap" style="width: 54%">Question</th>
-          <th scope="col" class="text-primary text-nowrap" style="width: 22%">Ta réponse</th>
-          <th scope="col" class="text-primary text-nowrap" style="width: 22%">La bonne réponse</th>
+          <th scope="col" class="text-primary text-nowrap" style="width: 60%">Question</th>
+          <th scope="col" class="text-primary text-nowrap" style="width: 20%">Ta réponse</th>
+          <th scope="col" class="text-primary text-nowrap" style="width: 20%">La bonne réponse</th>
         </tr>
         <tbody id="row-results">
         </tbody>
