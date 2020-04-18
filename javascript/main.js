@@ -67,7 +67,9 @@ const showAnswers = (question) => {
           showQuestion(questions[j]);
         }, delayInMilliseconds);
       } else {
-        showResults();
+        setTimeout(function () {
+          showResults();
+        }, 2000);
       }
     });
   }
@@ -160,6 +162,6 @@ const showResults = () => {
   anime({
     targets: selector,
     rotate: 720,
-    duration: 3000,
+    duration: 5000,
   });
 };
