@@ -1,0 +1,77 @@
+body {
+  background-color: rgba(241, 241, 241, 0.993);
+}
+
+.main-title {
+  font-size: 3em;
+  letter-spacing: -3px;
+  font-weight: lighter;
+  text-align: center;
+  color: rgb(7, 8, 119);
+  background-color: #fed501;
+}
+
+.second-title {
+  margin-top: 70px;
+  font-size: 2em;
+  letter-spacing: -1px;
+  font-weight: lighter;
+  text-align: center;
+  color: rgb(7, 8, 119);
+}
+
+#welcome {
+  margin: 50px 150px 0 150px;
+  padding: 20px 0 20px 0;
+  border: solid 5px rgb(7, 8, 119);
+  border-radius: 50px;
+}
+
+#amount-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+#exampleSelect1 {
+  text-align: center;
+  position: relative;
+  border: solid 2px rgb(7, 8, 119) !important;
+}
+
+.card {
+  border-radius: 20px;
+}
+
+.border-primary {
+  border: solid 3px rgb(7, 8, 119);
+  border-color: rgb(7, 8, 119);
+}
+
+.answer-card {
+  cursor: pointer;
+  border: solid 2px rgb(7, 8, 119) !important;
+  border-color: rgb(7, 8, 119) !important;
+}
+
+.answer-card:hover {
+  background-color: #fce576;
+}
+
+.question {
+  left: 250px;
+  border: none;
+}
+
+.text-primary {
+  color: rgb(7, 8, 119) !important;
+}
+
+.btn-primary {
+  background-color: rgb(7, 8, 119);
+}
+
+.rounded {
+  border-radius: 20px !important;
+}

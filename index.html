@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Open Trivia Game</title>
+    <link rel="stylesheet" href="stylesheet/bootstrap-1.css" />
+    <link rel="stylesheet" href="stylesheet/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+    <!--     <script
+      src="https://kit.fontawesome.com/5179dfb87c.js"
+      crossorigin="anonymous"
+    ></script> -->
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="main-title font-weight-bold p-4" id="welcome">
+        QUESTIONS POUR UN CHAMPION
+      </h1>
+      <div id="sub-container">
+        <div id="welcome-form">
+          <h3 class="second-title font-weight-bold">
+            1ère question :
+          </h3>
+          <h3 class="second-title mt-0">
+            A combien de questions souhaitez-vous répondre ?
+          </h3>
+          <form id="amount-form" class="">
+            <fieldset class="justify-content-center">
+              <div class="row justify-content-md-center">
+                <div class="col-8 justify-content-center">
+                  <div class="form-group">
+                    <select
+                      class="form-control text-center"
+                      id="exampleSelect1"
+                    >
+                      <option>1</option>
+                      <option>10</option>
+                      <option>20</option>
+                      <option>30</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <input
+                type="submit"
+                value="Commencer"
+                class="btn btn-primary btn-lg mt-1"
+              />
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="javascript/main.js"></script>
+  </body>
+</html>
