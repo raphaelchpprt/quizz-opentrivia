@@ -157,5 +157,9 @@ const showResults = () => {
       `;
     }
   }
-  console.log(goodAnswers + "/10");
+  anime({
+    targets: selector,
+    rotate: 720,
+    duration: 3000,
+  });
 };
