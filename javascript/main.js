@@ -75,7 +75,7 @@ const showAnswers = (question) => {
       } else {
         setTimeout(function () {
           showResults();
-        }, 2000);
+        }, 1500);
       }
     });
   }
@@ -118,7 +118,6 @@ const getUserAnswer = (answerCard) => {
 };
 
 const showResults = () => {
-  console.log("results");
   let goodAnswers = 0;
   for (let i = 0; i < questions.length; i++) {
     if (userAnswers[i] === questions[i].correct_answer) {
@@ -148,7 +147,7 @@ const showResults = () => {
     if (userAnswers[i] === questions[i].correct_answer) {
       rowResult.innerHTML += `
       <tr>
-        <td scope="row">✅</th>
+        <td scope="row"><i class="fas fa-check-circle text-success h4"></i></th>
         <td scope="row">${questions[i].question}</th>
         <td class="text-success">${userAnswers[i]}</td>
         <td class="text-success">${questions[i].correct_answer}</td>
@@ -157,7 +156,7 @@ const showResults = () => {
     } else {
       rowResult.innerHTML += `
       <tr>
-        <td scope="row">❌</th>
+        <td scope="row"><i class="fas fa-times-circle text-danger h4"></i></th>
         <td>${questions[i].question}</th>
         <td class="text-danger">${userAnswers[i]}</td>
         <td class="text-success">${questions[i].correct_answer}</td>
