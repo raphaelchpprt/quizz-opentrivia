@@ -40,6 +40,12 @@ body {
   border: solid 2px rgb(7, 8, 119) !important;
 }
 
+#exampleSelect2 {
+  text-align: center;
+  position: relative;
+  border: solid 2px rgb(7, 8, 119) !important;
+}
+
 .card {
   border-radius: 20px;
 }
@@ -74,4 +80,8 @@ body {
 
 .rounded {
   border-radius: 20px !important;
+}
+
+.badge-primary {
+  background-color: rgb(7, 8, 119);
 }

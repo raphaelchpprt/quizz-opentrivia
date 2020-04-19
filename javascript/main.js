@@ -12,14 +12,18 @@ document.getElementById("amount-form").onsubmit = (e) => {
 
 const submitForm = () => {
   const questionsAmount = document.getElementById("exampleSelect1").value;
+  const difficulty = document
+    .getElementById("exampleSelect2")
+    .value.toLowerCase();
   document.getElementById("welcome-form").remove();
-  getQuestions(questionsAmount);
+  getQuestions(questionsAmount, difficulty);
 };
 
-const getQuestions = (questionsAmount) => {
-  fetch(URL + questionsAmount)
+const getQuestions = (questionsAmount, difficulty) => {
+  fetch(URL + questionsAmount + `&difficulty=` + difficulty)
     .then((response) => response.json())
     .then((response) => {
+      console.log(response);
       questions.push(response.results);
       questions = questions.flat();
       showQuestion(questions[j]);
@@ -29,7 +33,9 @@ const getQuestions = (questionsAmount) => {
 const showQuestion = (question) => {
   selector.innerHTML = `
   <div class="card p-5 mt-5 mb-5 ml-5 mr-5 pb-5 question">
-    <h3 class="text-center mt-2 font-weight-bold text-primary">${question.question}</h3>
+    <h3 class="text-center mt-2 font-weight-bold text-primary"><span class="badge badge-pill badge-primary mb-2">${
+      j + 1
+    }</span><br>${question.question}</h3>
     <div class="row" id="answers"></div>
   </div>
   `;
