@@ -21,10 +21,15 @@ body {
 }
 
 #welcome {
-  margin: 50px 150px 0 150px;
-  padding: 20px 0 20px 0;
-  border: solid 5px rgb(7, 8, 119);
-  border-radius: 50px;
+  border: solid 5px rgb(7, 8, 119) !important;
+  border-radius: 50px !important;
+}
+
+@media screen and (max-width: 600px) {
+  #welcome {
+    font-size: 30px;
+    margin-top: 30px;
+  }
 }
 
 #amount-form {

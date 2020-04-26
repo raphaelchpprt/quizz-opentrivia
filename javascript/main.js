@@ -32,7 +32,7 @@ const getQuestions = (questionsAmount, difficulty) => {
 
 const showQuestion = (question) => {
   selector.innerHTML = `
-  <div class="card p-5 mt-5 mb-5 ml-5 mr-5 pb-5 question">
+  <div class="card p-md-5 p-3 mt-5 mb-5 ml-md-5 mr-md-5 pb-5 question">
     <h3 class="text-center mt-2 font-weight-bold text-primary"><span class="badge badge-pill badge-primary mb-2">${
       j + 1
     }</span><br>${question.question}</h3>
@@ -54,7 +54,7 @@ const showAnswers = (question) => {
   const selectorAnswer = document.getElementById("answers");
   answers.forEach((answer) => {
     selectorAnswer.innerHTML += `
-        <div class="col-6">
+        <div class="col-sm-6">
           <div class="card p-4 mt-5 border-primary answer-card">
             <h6 class="text-center mt-2 text-primary">${answer}</h5>
           </div>
